@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey website</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1b937cdc25.js" crossorigin="anonymous"></script>
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind font changer -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- css -->
+      <link rel="stylesheet" href="styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+    </style>
+</head>
+<body class="font-manrope mx-5 lg:mx-20">
+    <header>
+        <!-- Navbar -->
+        <section class="mb-20 mt-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-[#FF4240]">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold ">Hockey<span class="text-[#FF4240]">’s</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a class="text-[#FF4240]">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-3">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                  <a class="btn bg-[#FF4240]">Get Ticket</a>
+                </div>
+              </div>
+        </section>
+
+        <!-- Banner section -->
+        <section class="mb-10">
+            <div class="flex flex-col-reverse ">
+                <div class="lg:absolute bg-[#131318] text-white rounded-2xl lg:w-[500px] lg:h-[150px] p-10 text-left mt-4">
+                    <h1 class="text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                    <p>Here you find the hero of our team.</p>
+                </div>
+
+
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="Images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img src="Images/4.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    
+                  </div>
+
+            </div>  
+        </section>
+    </header>
+    <main>
+
+        <!-- club -->
+        <section mb-30 >
+            <div class="text-center space-y-3">
+                <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p class="text-gray-400">Here is some percentage about our service.</p>
+            </div>
+        </section>
+        <section>
+            
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
